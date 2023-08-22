@@ -1,0 +1,148 @@
+// tables and smoller
+@media (max-width: 768px) {
+  #header {
+    &__home {
+      height: 30rem;
+
+      .header-content {
+        padding-top: 3rem;
+
+        h1 {
+          font-size: 2.6rem;
+        }
+
+        .typewrite {
+          font-size: 2rem;
+        }
+
+        .btn-light {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  #home-a .skills,
+  #home-b .profile,
+  #home-c .process,
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #about {
+    &-1 {
+      .info {
+        grid-template-columns: repeat(2, 1fr);
+
+        &__image {
+          position: relative;
+          top: 30px;
+        }
+      }
+    }
+  }
+}
+
+// mobile
+@media (max-width: 576px) {
+  #header {
+    &__home {
+      height: 10rem;
+      background-position: 20% 30%;
+      border-bottom: 3px solid $primary-color;
+
+      .header-content {
+        display: none;
+      }
+    }
+    &__inner {
+      height: 10rem;
+    }
+  }
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 0 0.5rem;
+    }
+  }
+  #home-a .skills,
+  #home-b .profile,
+  #home-c .process,
+  .items,
+  #contact-b .contact-info {
+    grid-template-columns: 1fr;
+  }
+  #main-footer {
+    height: 7rem;
+
+    .footer-container {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+
+      .social {
+        padding-top: 1rem;
+      }
+    }
+  }
+  #about {
+    &-1 {
+      .info {
+        grid-template-columns: 1fr;
+      }
+    }
+    &-3 {
+      .about-logos {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+  #contact {
+    &-a {
+      .fields {
+        display: grid;
+        grid-template-areas:
+          "name"
+          "email"
+          "subject"
+          "phone"
+          "message "
+          "button ";
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+    &-b {
+      div {
+        position: relative;
+        top: 15px;
+        font-size: 1.3rem;
+        margin-bottom: 1.3rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid white;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  .lead {
+    font-size: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  #home {
+    &-a {
+      .skills div {
+        border-bottom: 1px solid $dark-color;
+        padding-bottom: 1.5rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}

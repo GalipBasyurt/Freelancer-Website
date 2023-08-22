@@ -1,0 +1,70 @@
+#about {
+  &-1 {
+    .info {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1.5rem;
+
+      &__image {
+        padding: 0.3rem;
+        border-radius: 8px;
+      }
+
+      &__bio {
+        padding: 2rem;
+        border: 2px solid $light-color;
+      }
+    }
+  }
+  &-2 {
+    color: white;
+
+    .progress {
+      height: 20px;
+      margin-bottom: 1rem;
+      background-color: $light-color;
+      border-radius: 10px;
+
+      div {
+        background-color: $primary-color;
+        height: 100%;
+        text-align: center;
+      }
+    }
+  }
+  &-3 {
+    .about-logos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      align-items: center;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+  &-4 {
+    .references {
+      ul {
+        margin-top: 1rem;
+        list-style: none;
+        display: flex;
+        align-items: center;
+      }
+
+      p {
+        border: 1px solid $light-color;
+        border-radius: 5px;
+        padding: 0.5rem;
+      }
+
+      img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        padding-right: 0.5rem;
+      }
+    }
+  }
+}
